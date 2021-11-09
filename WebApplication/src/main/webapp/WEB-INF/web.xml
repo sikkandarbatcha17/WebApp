@@ -4,6 +4,16 @@
 
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID" version="2.5">
   <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>AuthenticationFilter</filter-name>
+  	<display-name>AuthenticationFilter</display-name>
+  	<description></description>
+  	<filter-class>AuthenticationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>AuthenticationFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
   <servlet>
   	<servlet-name>ReadData</servlet-name>
   	<display-name>ReadData</display-name>

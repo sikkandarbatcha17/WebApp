@@ -10,16 +10,6 @@
          >
 </head>
 <body>
-
-<%
-		response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
-	
-		if(session.getAttribute("username")==null)
-		{
-			response.sendRedirect("Login.jsp");
-		}
-			 
-	%>
 	
 <main class="m-3">
 	<div class="row col-md-6">

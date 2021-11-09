@@ -71,6 +71,7 @@ public class Connection implements IConnection{
                     	obj.setSeverity(severity[4]);
                     else if(svt==16)
                     	obj.setSeverity(severity[5]);
+                  //  obj.setSeverity(list[0]);
                     obj.setTimeGenerated(list[1]);
                     obj.setEventId(list[2]);
                     obj.setId(list[3]);

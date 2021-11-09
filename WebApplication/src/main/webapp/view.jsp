@@ -9,18 +9,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
          >
 </head>
-<body>
-
-<%
-		response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
-	
-		if(session.getAttribute("username")==null)
-		{
-			response.sendRedirect("Login.jsp");
-		}
-			 
-	%>
-	
+<body>	
 <main class="m-3">    
 			    <c:forEach items="${eventLogs}" var="eventLogs">
 	                <p>

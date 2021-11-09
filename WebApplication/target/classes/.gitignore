@@ -6,3 +6,5 @@
 /Logout.class
 /ReadData.class
 /TopValue.class
+/LoginFilter.class
+/AuthenticationFilter.class
